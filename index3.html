@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+<title>Stage 3</title>
+</head>
+<body>
+<div class="container">
+<h1>Stage 3</h1>
+
+
+<ul>
+<li>1: Two creatures—
+one born of shadow,
+one born of fire.
+Side by side,
+they make a chaos only we understand.</li> <br>
+<li>2: Our energy isn’t yin and yang.
+It's something wilder—
+a pair of felines,
+one midnight,
+one ember.</li> <br>
+<li>3: If we were animals,
+we’d be the kind that watch humans from rooftops.
+One blends with night,
+one glows like autumn.</li>
+</ul>
+
+
+<p>Final Question: What is the duo?</p>
+<p>Write in all small letter :</p>
+<p>HINTS: mine and yours</p>
+<input type="text" id="answer3" placeholder="Final answer...">
+<button onclick="checkAnswer3()">Submit</button>
+<p id="msg3"></p>
+</div>
+
+
+<script>
+function checkAnswer3() {
+const ans = document.getElementById("answer3").value.toLowerCase().trim();
+
+
+if (ans === "black and orange cats") {
+window.location.href = "https://ftineffia.github.io/HAPPY-BIRTHDAY-MY-LOVE/"; // replace later
+} else {
+document.getElementById("msg3").textContent = "Incorrect.";
+}
+}
+</script>
+</body>
+</html>

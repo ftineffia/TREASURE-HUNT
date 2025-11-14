@@ -1,0 +1,49 @@
+<!-- ========================================= -->
+<!-- index1.html (Stage 1 Example Template) -->
+<!-- ========================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+<title>Stage 1</title>
+</head>
+<body>
+<div class="container">
+<h1>Stage 1</h1>
+
+<ul>
+<li>1: The night didn't speak, but the sky did.
+When your lips met mine, a silver coin was watching us.</li>
+<br>
+<li>2: A circle in the sky. A witness with no tongue.
+A light that didn't flicker even when we did.</li>
+<br>
+<li>3: Not new. Not broken. Not hidden.</li>
+</ul>
+
+
+<p>What was the form of the moon? (requires correct answer to proceed):</p>
+<p>Write in all small letter :]</p>
+<input type="text" id="answer" placeholder="Enter your answer...">
+<button onclick="checkAnswer()">Submit</button>
+<p id="message"></p>
+</div>
+
+
+<script>
+function checkAnswer() {
+const answer = document.getElementById("answer").value.toLowerCase().trim();
+
+
+// Change "example" to your real answer
+if (answer === "full moon") {
+window.location.href = "index2.html";
+} else {
+document.getElementById("message").textContent = "Wrong answer.:)";
+}
+}
+</script>
+</body>
+</html>

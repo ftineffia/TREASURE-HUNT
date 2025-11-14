@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+<title>Stage 2</title>
+</head>
+<body>
+<div class="container">
+<h1>Stage 2</h1>
+
+
+<ul>
+<li>1: Two colors screamed louder than the ride. One soft. One cool.
+Together they painted us.</li> <br>
+<li>2: Before the metal roared and gravity left, we were wrapped in two hues—
+one blush,
+one calm.</li> <br>
+<li>3: The ride was chaotic, but not the colors that matched us.</li>
+</ul>
+
+
+<p>Final Question: What was the colour of our outfits></p>
+<p>Write in all small letter :</p>
+<p>HINT: mine and yours</p>
+<input type="text" id="answer2" placeholder="Enter your answer...">
+<button onclick="checkAnswer2()">Submit</button>
+<p id="msg2"></p>
+</div>
+
+
+<script>
+function checkAnswer2() {
+const ans = document.getElementById("answer2").value.toLowerCase().trim();
+
+
+if (ans === "pink and blue") {
+window.location.href = "index3.html";
+} else {
+document.getElementById("msg2").textContent = "Wrong answer.";
+}
+}
+</script>
+</body>
+</html>

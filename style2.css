@@ -1,0 +1,23 @@
+body {
+background-color: #080808;
+color: #dcdcdc;
+font-family: "Courier New", monospace;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+
+.container {
+width: 80%;
+max-width: 600px;
+padding: 20px;
+border: 1px solid #333;
+background-color: #101010;
+border-radius: 5px;
+}
+
+
+input, button { margin-top: 10px; }
